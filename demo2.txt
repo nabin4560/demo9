@@ -1,0 +1,38 @@
+nabin_mahato@THBSSTRLPT-193 MINGW64 ~/Documents/New folder
+$ mkdir git_demo1
+
+nabin_mahato@THBSSTRLPT-193 MINGW64 ~/Documents/New folder
+$ cd git_demo1
+
+nabin_mahato@THBSSTRLPT-193 MINGW64 ~/Documents/New folder/git_demo1
+$ git init
+Initialized empty Git repository in C:/Users/nabin_mahato/Documents/New folder/git_demo1/.git/
+
+nabin_mahato@THBSSTRLPT-193 MINGW64 ~/Documents/New folder/git_demo1 (master)
+$ touch demo.txt
+
+nabin_mahato@THBSSTRLPT-193 MINGW64 ~/Documents/New folder/git_demo1 (master)
+$ git add demo.txt
+
+nabin_mahato@THBSSTRLPT-193 MINGW64 ~/Documents/New folder/git_demo1 (master)
+$ git commit -m "commiting the file demo.txt"
+[master (root-commit) cc7657a] commiting the file demo.txt
+ 1 file changed, 4 insertions(+)
+ create mode 100644 demo.txt
+
+nabin_mahato@THBSSTRLPT-193 MINGW64 ~/Documents/New folder/git_demo1 (master)
+$ git remote add origin https://github.com/nabin4560/newremoterepo.git
+
+nabin_mahato@THBSSTRLPT-193 MINGW64 ~/Documents/New folder/git_demo1 (master)
+$ git remote -v
+origin  https://github.com/nabin4560/newremoterepo.git (fetch)
+origin  https://github.com/nabin4560/newremoterepo.git (push)
+
+nabin_mahato@THBSSTRLPT-193 MINGW64 ~/Documents/New folder/git_demo1 (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 243 bytes | 121.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nabin4560/newremoterepo.git
+ * [new branch]      master -> master
